@@ -1,0 +1,45 @@
+# ========================================
+# VaultPlugin Configuration
+# ========================================
+
+# ------------------ Vault Costs ------------------
+# Set the cost for each vault. Vault numbers are 1-based.
+# Example: Vault #1 costs 100.0, Vault #2 costs 250.0, Vault #3 costs 10000
+# Note: Commas will not work, just dont do it...
+vault-costs:
+  1: 100.0
+  2: 250.0
+  3: 10000
+
+# ------------------ Instructions ------------------
+# How to add a new vault:
+# 1. Add a new entry under "vault-costs" with the vault number and cost.
+#    Example:
+#       4: 750.0
+# 2. Vault numbers must be consecutive if you want a clean selector layout.
+# 3. The plugin supports up to 28 vault slots in the selector page (rows 1-4, columns 1-7).
+# 4. Players can unlock vaults by paying the amount defined here.
+# 5. Non-existent vault numbers will appear as black filler in the vault selector.
+
+# ------------------ Vault Limits ------------------
+# Maximum vaults per player: 28
+# Selector page slots: 54 (outer border white glass, inner 28 vault slots)
+# Storage page slots: 27 (inside vault inventory)
+# Filler protection: All filler items are fully protected; players cannot move or pick them up.
+
+# ------------------ Unlocked Vaults ------------------
+# This section is managed automatically by the plugin.
+# Each UUID maps to a list of unlocked vault indexes (0-based internally)
+# Example:
+# unlocked:
+#   "player-uuid-1": [0, 1]  # Vault #1 and #2 unlocked
+#   "player-uuid-2": [0]
+
+unlocked: {}
+
+# ------------------ Plugin Info ------------------
+# Plugin by Cold
+# Version: 1.0
+# Version "Tested on 1.20.6," Can recompile to what ever version you want.
+# Made by Cold
+# License: MIT License

@@ -1,0 +1,21 @@
+name: VaultPlugin
+main: com.coldworld.vaults.VaultPlugin
+version: 1.5
+author: Cold
+description: A configurable vault plugin with selector pages and storage, free to use and modify.
+api-version: 1.20.6
+
+commands:
+  vault:
+    description: Open your vaults or manage them
+    usage: /vault
+    permission: vault.use
+    permission-message: You do not have permission to use this command.
+
+permissions:
+  vault.use:
+    description: Allows player to open vaults
+    default: true
+  vault.reload:
+    description: Allows player to reload VaultPlugin config
+    default: op
