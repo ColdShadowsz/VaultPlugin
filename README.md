@@ -36,6 +36,8 @@ CREATED FOR KAIDMC
 
 ---
 
+![VaultPlugin Screenshot](Screenshot%202025-11-29%20203916.png)
+
 ## Configuration (`config.yml`)
 
 Example `vault-costs` setup:
@@ -123,3 +125,4 @@ MIT License – free to use and modify.
 # ==========
 
 Cold – https://github.com/ColdShadowsz
+
